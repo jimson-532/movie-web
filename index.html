@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/scrolling-film-strip-2-transparent-alpha-channel-loop_wjpjjwdxh__d_thumbnail-1080_01.png
+);">
+    
+    <header class=" text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="#">Movimaniac</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="hero bg-image text-white text-center" >
+        <div class="container">
+            <h2>Discover Your Next Favorite Movie</h2>
+            
+            <a href="#" class="btn btn-primary btn-lg">Browse Movies</a>
+        </div>
+    </section>
+
+    
+    <section class="featured-movies py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Movies</h2>
+            <div class="row">
+                
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="https://www.themoviedb.org/t/p/original/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg" class="card-img-top" alt="Avatar">
+                        <div class="card-body">
+                            <h5 class="card-title">Avatar</h5>
+                            <p class="card-text">An epic science fiction film directed by <br>James Cameron.</p>
+                            <button class="btn btn-primary view-details" data-toggle="modal" data-target="#movieModal" data-title="Avatar" data-description="Avatar is set in the mid-22nd century, when humans are colonizing Pandora.">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2021/08/19085635/gEU2QniE6E77NI6lCU6MxlNBvIx-scaled.jpg" class="card-img-top" alt="Interstellar">
+                        <div class="card-body">
+                            <h5 class="card-title">Interstellar</h5>
+                            <p class="card-text">A mind-bending space journey directed by Christopher Nolan.</p>
+                            <button class="btn btn-primary view-details" data-toggle="modal" data-target="#movieModal" data-title="Interstellar" data-description="Interstellar explores space travel to ensure humanity's survival.">View Details</button>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="https://preview.redd.it/elmplojv77z51.jpg?auto=webp&s=c5443d91cb645388dd63bc9076f3ccda27266284" class="card-img-top" alt="Inception">
+                        <div class="card-body">
+                            <h5 class="card-title">Inception</h5>
+                            <p class="card-text">A mind-bending heist thriller directed by Christopher Nolan.</p>
+                            <button class="btn btn-primary view-details" data-toggle="modal" data-target="#movieModal" data-title="Inception" data-description="Inception is about the art of infiltrating dreams.">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white">
+                        <img src="https://img.reelgood.com/content/movie/f61bedb1-c3a0-41d4-b04f-bf2c5e25aadb/poster-780.jpg" class="card-img-top" alt="Deadpool">
+                        <div class="card-body">
+                            <h5 class="card-title">Deadpool</h5>
+                            <p class="card-text">An action-packed superhero comedy starring Ryan Reynolds.</p>
+                            <button class="btn btn-primary view-details" data-toggle="modal" data-target="#movieModal" data-title="Deadpool" data-description="Deadpool follows the antihero in a wild, humorous adventure.">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieModalLabel">Movie Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Movie description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class=" text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 MovieWeb. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
